@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link type="text/css" rel="stylesheet" href="Quiz.css">
+	 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	 <script defer type="text/javascript" src="Quiz.js"></script>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Geography Quiz</title>
+  </head>
+  <body>
+    <h1>Geography Quiz</h1>
+	  <section id="quiz">
+	    <ol>
+		  <li class="question">What is the capital of Liechtenstein?</li>
+		    <ul>
+			  <li><input type="radio" name="question1" class="false">Andora</li>
+			  <li><input type="radio" name="question1" class="true">Vaduz</li>
+			  <li><input type="radio" name="question1" class="false">Triesen</li>
+			  <li><input type="radio" name="question1" class="false">St. Trinian</li>
+			</ul>
+		  <li class="question">What animal is displayed on the flag of Kazakhstan?</li>
+			<ul>
+			  <li><input type="radio" name="question2" class="true">Steppe Eagle</li>
+			  <li><input type="radio" name="question2" class="false">Mountain Eagle</li>
+			  <li><input type="radio" name="question2" class="false">Steppe Hawk</li>
+			  <li><input type="radio" name="question2" class="false">Mountain Hawk</li>
+			</ul>
+		  <li class="question">Where is Transnistria located?</li>
+			<ul>
+			  <li><input type="radio" name="question3" class="false">Central Russia</li>
+			  <li><input type="radio" name="question3" class="true">Eastern Moldova</li>
+			  <li><input type="radio" name="question3" class="false">South Balkans</li>
+			  <li><input type="radio" name="question3" class="false">Caucasus</li>
+			</ul>
+		  <li class="question">Where is the peacock considered sacred?</li>
+			<ul>
+			  <li><input type="radio" name="question4" class="false">China</li>
+			  <li><input type="radio" name="question4" class="true">India</li>
+			  <li><input type="radio" name="question4" class="false">Vietnam</li>
+			  <li><input type="radio" name="question4" class="false">Sri Lanka</li>
+			</ul>
+		  <li class="question">How many native speaker does Hawaiian have?</li>
+			<ul>
+			  <li><input type="radio" name="question5" class="true">26,000</li>
+			  <li><input type="radio" name="question5" class="false">35,000</li>
+			  <li><input type="radio" name="question5" class="false">5,000</li>
+			  <li><input type="radio" name="question5" class="false">270,000</li>
+			</ul>
+		</ol>
+	  </section>
+	  <section id="controls">
+	    <h2>Your score:</h2>
+		  <p class="score"><span class="user_score"></span>/5</p>
+		  <div class="buttons">
+		    <p class="check" onclick="addPoints()">Check</p>
+		    <p class="reset" onclick="resetPoints()">Reset</p>
+		  </div>
+	  </section>
+  </body>
+</html>
